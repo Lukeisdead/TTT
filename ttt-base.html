@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tic Tac Toe</title>
+
+<link rel="stylesheet" href="tt-base.css">
+
+</head>
+
+<body>
+
+<table id=board>
+	<tr>
+		<td class=square id=sq1 onclick="sq='sq1';markSpace()"></td>
+		<td class=square id=sq2 onclick="sq='sq2';markSpace()"></td>
+		<td class=square id=sq3 onclick="sq='sq3';markSpace()"></td>
+	</tr>
+	<tr>
+		<td class=square id=sq4 onclick="sq='sq4';markSpace()"></td>
+		<td class=square id=sq5 onclick="sq='sq5';markSpace()"></td>
+		<td class=square id=sq6 onclick="sq='sq6';markSpace()"></td>
+	</tr>
+	<tr>
+		<td class=square id=sq7 onclick="sq='sq7';markSpace()"></td>
+		<td class=square id=sq8 onclick="sq='sq8';markSpace()"></td>
+		<td class=square id=sq9 onclick="sq='sq9';markSpace()"></td>
+	</tr>
+</table>
+
+<table id=solution>
+	<tr><td><button onclick="reset()">New Game</button></td></tr>
+	<tr><td id="result">And the winner is</td></tr>
+</table>
+
+<script src="ttt-base.js"></script>
+
+
+</body>
+</html>

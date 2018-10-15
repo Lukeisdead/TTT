@@ -1,0 +1,18 @@
+#board {
+	height: 278px;
+	width:  280px;
+	position: relative;
+	background-color: black;
+	border-spacing: 4px;
+}
+
+#solution {
+	position: relative;
+	left: 10px;
+}
+
+.square {
+	height: 86px;
+	width:  88px;
+	background-color: white;
+}
