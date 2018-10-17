@@ -15,16 +15,40 @@ var moves = "9";	// used to record the number of moves remaining (9 down to 0)
 var moveX = true;	// true when it is X's move and false when it is O's move
 var winner = false;	// true when there is a winner (someone has 3 in a row)
 var theWinner = "CAT";	// the identity of the winner of the game: "X" or "O" or "CAT"
-
 	// set initial values for variables and game html elements
-
+var board = [
+    [sq1, sq2, sq3],
+    [sq4, sq5, sq6],
+    [sq7, sq8, sq9]
+];
 ///////////////////////////////////////////////////////////////////////////////////////////
 // markSpace() is used by the user to update the board and display the move on the page
 ///////////////////////////////////////////////////////////////////////////////////////////
+sq1.addEventListener('click', (e) => {            }, false);
+sq2.addEventListener('click', (e) => {            }, false);
+sq3.addEventListener('click', (e) => {            }, false);
+sq4.addEventListener('click', (e) => {            }, false);//all add a listener to (e)
+sq5.addEventListener('click', (e) => {            }, false);
+sq6.addEventListener('click', (e) => {            }, false);
+sq7.addEventListener('click', (e) => {            }, false);
+sq8.addEventListener('click', (e) => {            }, false);
+sq9.addEventListener('click', (e) => {            }, false);
+
 function markSpace()
 {
-	alert(sq+" is the current candidate to be marked on the board");
-  document.getElementById('').style.backgroundImage='url("X.bmp")'; // specifies the image
+
+		if (moveX == true){
+    document.getElementById('').style.backgroundImage='url("X.bmp")'; // specifies the image
+		moveX = !moveX;
+	}
+		else {
+		document.getElementById('').style.backgroundImage='url("O.bmp")'; // specifies the image
+		moveX = !moveX;
+		}
+}
+		var i;
+		for (i = 0; i <9; i++) {
+		board[1] += " ";
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////
